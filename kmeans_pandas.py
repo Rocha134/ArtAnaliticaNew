@@ -1,4 +1,4 @@
-# %%
+
 import math
 import random
 import pandas as pd
@@ -14,12 +14,12 @@ def distance(obj1, obj2, attributes):
 
 df = pd.read_csv("Mall_Customers.csv")
 
-# %%
+
 sns.set_style("white")
 sns.scatterplot(data=df, x="Annual_Income_(k$)", y="Spending_Score", hue="Age")
 plt.show()
 
-# %%
+
 k = 3
 D = df
 attributes = ["Annual_Income_(k$)", "Spending_Score"]
@@ -35,5 +35,3 @@ while centroids is None or not centroids.equals(new_centroids):
     sns.scatterplot(data=df, x="Annual_Income_(k$)", y="Spending_Score", hue=clusters)
     plt.show()
     # print(new_centroids)
-
-# %%

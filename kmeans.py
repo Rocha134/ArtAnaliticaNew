@@ -11,7 +11,7 @@ def distance(obj1, obj2, attributes):
 # Entrada:
 # 	k: Número de clústeres,
 # 	D: Dataset compuesto de n objetos
-def kmeans(k, D, attributes):            
+def kmeans(k, D, attributes):
 # Método:
 # 	1. Escoger k elementos de D como centros iniciales de los clústeres
     centroids = []
@@ -33,7 +33,7 @@ def kmeans(k, D, attributes):
                     minimum_index = cluster_index
                     minimum = _distance
             clusters[minimum_index].append(obj_index)
-        
+
         # print(clusters)
     # 	4.	actualiza el centro de cada clúster, en base a la nueva
     # 			composición del clúster
